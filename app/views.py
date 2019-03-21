@@ -25,14 +25,19 @@ def lista_vagas(request):
 
     cargo = request.POST.get("cargo", "")
     localidade = request.POST.get("localidade", "")
-    vagas = Vagas.objects.filter(titulo__contains=cargo, cidade__contains=localidade)
 
-    contexto = {
-        'localidade': localidade,
-        'vagas': vagas
-    }
+    try:
+        
+        vagas = Vagas.objects.filter(titulo__contains=cargo, cidade__contains=localidade)
 
-    return render(request, 'lista-vagas.html', contexto)
+        contexto = {
+            'localidade': localidade,
+            'vagas': vagas
+        }
+
+        return render(request, 'lista-vagas.html', contexto)
+    except err:
+        return render(request, 'naoencontrado.html')
 
 def descricao_vaga(request, id):
 

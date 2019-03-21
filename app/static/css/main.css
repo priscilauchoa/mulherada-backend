@@ -120,7 +120,6 @@ header span{
 /* CORPO */
 
 main {
-    /* background: url(img/main-background.jpg) no-repeat left top, linear-gradient(to right, rgba(230,60,112,0.3), rgba(103,85,130, 0.3), rgba(99,177,200, 0.3)); */
     position: center;
     align-items: flex-start;
     flex-direction: row;

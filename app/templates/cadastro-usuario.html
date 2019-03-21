@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
+{% include "head.html" %}
+<link rel="stylesheet" href="{% static "css/usuario.css" %}">
+{% include "body.html" %}
+{% include "header.html" %}
+
+        <!-- MAIN -->
+        <main>
+
+            <div class="centralizado">
+
+
+                <form class="form-usuario borda-padrao" name="formUsuario" action="" method="POST">
+
+                    <span class="user">Usuário</span>
+
+                    <input type="text" name="nome" required="required" placeholder="Primeiro Nome">
+                    <input type="text" name="sobrenome" required="required" placeholder="Sobrenome">
+                    <input type="email" name="email" required="required" placeholder="Informe seu E-mail">
+                    <input type="password" name="senha" required="required" placeholder="Digite uma Senha">
+                    <input type="password" name="senha" required="required" placeholder="Confirme sua Senha ">
+                    <a href="index.html" class="button" type="submit">Cadastrar</a>
+
+                    <a href="login.html"> Já sou Cadastrado! </a>
+
+                    <div class="divisor-horizontal"></div>
+
+                    <p> Cadastre-se com suas redes sociais ou em nosso site para acessar as vagas!</p>
+
+                    <p class="botoes-rede-social">
+                        <img src="{% static "img/facebook.png" %}">
+                        <img src="{% static "img/linkedin.png" %}">
+                    </p>
+                </form>
+            </div>
+        </main>
+
+{% include "footer.html" %}

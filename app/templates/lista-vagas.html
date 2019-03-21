@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
+{% include "head.html" %}
+<link rel="stylesheet" href="{% static "css/lista-vagas.css" %}">
+{% include "body.html" %}
+{% include "header.html" %}
+
+        <!-- MAIN -->
+        <main>  
+
+            <section class="centralizado">
+              <div class="lista-conteudo container">
+
+                <aside class="painel-usuario borda-padrao">
+                    <div class="foto-container">
+                        <div class="cover"></div>
+                        <img class="foto" src="{% static "img/profile-picture.jpg" %}" />
+                    </div>
+                    <span class="nome">Priscila Flores</span>
+                    <span class="cargo">(re)Programadora</span>
+                    <div class="divisor-horizontal"></div>
+                    <article class="bio">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </article>
+                </aside>
+
+                <div class="lista-resultado borda-padrao">
+                    <section class="item ">
+                        <b>Filtro:</b> {{ localidade }}
+                    </section>
+
+                    <div class="divisor-horizontal"></div>
+
+
+                    {% for vaga in vagas %}
+
+                    <section class="item vaga">
+                        <span class="cidade">{{ vaga.cidade }}</span>
+                        <a href="descricao-vaga/{{ vaga.id }}" class="nome">{{ vaga.titulo }}</a>
+                        <span class="compania">{{ vaga.empresa }}</span>
+                        <span class="salario">R$ {{ vaga.salario }}</span>
+                        <article class="descricao">                                
+                            {{ vaga.descricao }}
+                        </article>
+                        <a href="mailto:{{ vaga.contato }}" class="aplicar">Entrar em contato</a>
+                    </section>
+
+                    {% endfor %}
+                </div>
+
+              </div>
+            </section>
+
+        </main>
+
+{% include "footer.html" %}

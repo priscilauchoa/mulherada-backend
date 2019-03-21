@@ -1,0 +1,36 @@
+.faleConosco {
+    align-items: center;
+    display: flex;
+    flex-flow: column;    
+    background-color: gainsboro; 
+    width: 350px;
+    margin-left: 500px;
+}
+
+
+textarea {
+    border-radius: 8px;
+    height: 150px;
+    resize: none;
+    width: 300px;   
+}
+    
+button {
+    border-radius: 8px;
+    display: flex;
+    height: 26px;
+    margin-top: 1em; 
+    width: 56px;
+}
+    
+input {
+    border-radius:8px;
+    width: 300px;
+    height: 20px;
+} 
+    
+h1 {
+    text-align: center;
+    color: white;
+} 
+    

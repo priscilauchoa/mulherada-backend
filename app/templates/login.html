@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
+{% include "head.html" %}
+<link rel="stylesheet" href="{% static "css/usuario.css" %}">
+{% include "body.html" %}
+{% include "header.html" %}
+
+        <!-- MAIN -->
+        <main>
+
+            <div class="centralizado">
+
+                <form class="form-usuario borda-padrao" name="formUsuario" action="" method="POST">
+
+                    <span class="user">Login</span>
+
+                    <input type="email" name="email" required="required" placeholder="Informe seu E-mail">
+                    <input type="password" name="senha" required="required" placeholder="Digite uma Senha">
+                    <a href="index-logado.html" class="button" type="submit">Entrar</a>
+
+                    <div class="divisor-horizontal"></div>
+
+                    <p> Entre com suas redes sociais!</p>
+
+                    <p class="botoes-rede-social">
+                        <img src="{% static "img/facebook.png" %}">
+                        <img src="{% static "img/linkedin.png" %}">
+                    </p>
+                </form>
+            </div>
+        </main>
+
+{% include "footer.html" %}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
+{% include "head.html" %}
+<link rel="stylesheet" href="{% static "css/usuario.css" %}">
+{% include "body.html" %}
+{% include "header.html" %}
+
+        <main>
+
+            <div class="centralizado">
+
+                <form class="form-usuario borda-padrao" name="formUsuario" action="" method="POST">
+
+
+                    <span class="user">Currículo</span>
+
+                    <h3>Dados pessoais</h3>
+
+                    <p class="nome">
+                        Nome <input type="text" name="nome" required="required" placeholder="Nome">
+                    </p>
+
+                    <p class="dataNascimento">
+                        Data de Nascimento <input type="date" name="calendario" required="required" placeholder="Data de Nascimento">
+                    </p>
+
+                    <p class="nacionalidade">
+                        Nacionalidade <input type="text" name="nacionalidade" required="required" placeholder="Nacionalidade">
+                    </p>
+
+                    <p class="cpf">
+                        Digite seu CPF <input type="number" name="numero" required="required" placeholder="Digite seu CPF">
+                    </p>
+
+                    <p class="estadoCivil">
+                        Estado Civil <input type="text" name="estadoCivil" required="required" placeholder="Estado Civil">
+                    </p>
+
+                    <h3>Contato</h3>
+
+                    <p class="email">
+                        Informe um E-mail válido <input type="email" name="email" required="required" placeholder="Informe um E-mail válido">
+                    </p>
+
+                    <p class="telefone">
+                        Telefone Fixo <input type="text" name="telefone" required="required" placeholder="Telefone Fixo">
+                    </p>
+
+                    <p class="telefoneCel">
+                        Telefone Celular <input type="text" name="telefoneCel" required="required" placeholder="Telefone Celular">
+                    </p>
+
+                    <h3>Endereço</h3>
+
+                    <p class="cep">
+                        Digite o CEP <input type="text" name="cep" required="required" placeholder="Digite o CEP">
+                    </p>
+
+                    <p class="rua">
+                        Rua (com o número) <input type="text" name="rua" required="required" placeholder="Rua (com o número)">
+                    </p>
+
+                    <p class="bairro">
+                        Bairro <input type="text" name="bairro" required="required" placeholder="Bairro">
+                    </p>
+
+                    <p class="cidade">
+                        Cidade <input type="text" name="cidade" required="required" placeholder="Cidade">
+                    </p>
+
+                    <p class="estado">
+                        Estado <input type="text" name="estado" required="required" placeholder="Estado">
+                    </p>
+
+                    <h3>Formação</h3>
+
+                    <p class="Instituição">
+                        Instituição <input type="text" name="Instituição" required="required" placeholder="Instituição">
+                    </p>
+
+                    <p class="curso">
+                        Curso <input type="text" name="curso" required="required" placeholder="Curso">
+                    </p>
+
+                    <p class="nivel">
+                        Nível <input type="text" name="nivel" required="required" placeholder="Nível">
+                    </p>
+
+                    <p class="periodo">
+                        Início <input type="text" name="inicio" required="required" placeholder="Início">
+                    </p>
+
+                    <p class="periodo">
+                        Término <input type="text" name="termino" required="required" placeholder="Término">
+                    </p>
+
+                    <a href="/" class="button" type="submit">Entrar</a>
+
+                </form>
+            </div>
+        </main>
+
+{% include "footer.html" %}

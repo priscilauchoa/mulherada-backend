@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
+{% include "head.html" %}
+<link rel="stylesheet" href="{% static "css/stylesAvaliacao.css" %}">
+{% include "body.html" %}
+{% include "header.html" %}
+       
+     <div class="centralizarH1">
+        <h1>Avalie uma Empresa!</h1>
+     </div>
+
+     <div class="centralizarP">
+        <p>Deixe aqui um comentário e uma avaliação do seu contato com uma empresa.</p>
+     </div>
+     
+    <main class="centralizado">
+        <form class="container" action="." method="post">
+            <div class="avaliacao-empresa">
+                 <input type="text" placeholder="Nome completo">
+                 <input type="text" placeholder="Nome da Empresa">
+                <input type="text" placeholder="Título do seu comentário ">
+                <textarea name="" id="" cols="30" rows="10" placeholder=" Seu comentário"></textarea>
+                Avaliação: <select>
+                        <option>Péssima</option>
+                        <option>Ruím</option>
+                        <option>Normal</option>
+                        <option>Boa</option>
+                        <option>Ótima</option>
+                    </select>
+                    <div class="botao-avaliacao">
+                        <Button>Enviar</Button>
+                    </div>
+            </div>
+        </form>
+        <!-- <img src="img/executivo-etnico-africano-com-adesivos-no-escritorio_79295-4908.jpg" alt=""> -->
+    </main>
+
+{% include "footer.html" %}

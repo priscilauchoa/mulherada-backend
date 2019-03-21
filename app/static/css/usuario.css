@@ -1,0 +1,93 @@
+/* MAIN */
+
+main {
+    background-color: rgba(245, 245, 245, 1);
+    min-height: calc(100% - 106px);
+    padding-top: 0;
+}
+
+.form-usuario {
+    background-color: white;
+    font-size: 10pt;
+    margin-top: 16px;
+    padding: 8px;
+    width: 500px;
+}
+
+.form-usuario .user {
+    font-size: 16pt;
+}
+
+.form-usuario input::placeholder {
+    color: rgb(158, 51, 168);
+    text-align: left;
+    font-size: 10pt;
+}
+
+.form-usuario a.button,
+.form-usuario input {
+    display: block;
+    font-size: 10pt;
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.form-usuario a.button {
+    display: inline-block;
+    margin-left: 0;
+    width: auto;
+}
+
+.form-usuario a {
+    margin-left: 8px;
+}
+
+.form-usuario .enviar input {
+    background: rgba(128, 0, 128, 0.801);
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgb(113, 10, 124);;
+    color: white;
+    cursor: pointer;
+}
+
+.form-usuario .divisor-horizontal {
+    margin-left: 0;
+    width: 100%;
+}
+
+.enviar input:hover {
+    background: rgba(197, 69, 107, 0.411);
+    opacity: 10;
+}
+
+.entrar input { 
+    background: rgba(128, 0, 128, 0.801);
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px ;
+    border: 1px solid rgb(113, 10, 124);
+    color: white;
+    cursor: pointer;
+}
+
+.entrar input:hover {
+    background: rgba(197, 69, 107, 0.411);
+    opacity: 10;
+}
+
+/* BOTAO REDE SOCIAL */
+
+.botoes-rede-social {
+    cursor: pointer;
+}
+
+.botoes-rede-social img {
+    display: inline;
+    height: 50px;
+    margin-right: 8px;
+}

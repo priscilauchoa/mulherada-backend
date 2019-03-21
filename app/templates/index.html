@@ -1,0 +1,41 @@
+{% load static %}<!DOCTYPE html>
+{% include "head.html" %}
+{% include "body.html" %}
+{% include "header.html" %}
+        <!-- MAIN -->
+        <main>
+
+            <!-- BUSCA -->
+            <section class="busca-container centralizado">
+                <form class="container" action="/lista-vagas" method="post">
+                    {% csrf_token %}
+                    <section class= "busca">
+                        <span for="cargo"></span>
+                        <input id="cargo"  type="text" name="cargo" size="30" placeholder="PROFISSÃO?">
+                    </section>
+                    
+                    <section class= "busca">
+                        <span for="localidade"></span>
+                        <input id="localidade" type="text" name="localidade" size="30" placeholder="LOCALIZAÇÃO?">
+                    </section>
+
+                    <input type="submit" value="Pesquisar">
+                </form>
+                
+            </section>
+
+            <section class="texto-container centralizado">
+                <div class="container">
+                    <p>ENCONTRE AQUI SUAS MELHORES OPORTUNIDADES!</p>
+                    <p>AS MELHORES EMPRESAS QUALIFICADAS E AVALIADAS DO MERCADO</p>
+                </div>
+            </section>
+
+            <section class="conteudo-container centralizado">
+                <div class="container">
+                    <a class="button" href="curriculo">EDITE SEU CURRÍCULO</a>
+                </div>
+            </section>
+        </main>
+
+{% include "footer.html" %}

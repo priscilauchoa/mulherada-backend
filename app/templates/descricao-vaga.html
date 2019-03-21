@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
+{% include "head.html" %}
+<link rel="stylesheet" href="{% static "css/descricao-vaga.css" %}">
+{% include "body.html" %}
+{% include "header.html" %}
+
+        <!-- MAIN -->
+        <main>  
+
+            <section class="centralizado">
+              <div class="detalhe-conteudo container">
+
+                <div class="detalhe-container borda-padrao">
+                    <a class="nome">{{ vaga.titulo }}</a>
+                    <div class="divisor-horizontal"></div>
+
+                    <a href="mailto:{{ vaga.contato }}" class="aplicar">Entrar em contato</a>
+                    <span class="salario">R$ {{ vaga.salario }}</span>
+                    <article class="descricao">
+                        {{ vaga.descricao }}
+                    </article>
+                </div>
+
+                <aside class="painel-empresa borda-padrao">
+                    <div class="foto-container">
+                        <div class="cover"></div>
+                        <img class="foto borda-padrao" src="{% static "img/eh.jpg" %}" />
+                    </div>
+                    <span class="nome">{{ vaga.empresa }}</span>
+                    <span class="cargo">{{ vaga.cidade }}</span>
+                    <div class="divisor-horizontal"></div>
+                    <article class="bio">
+                        A Estação Hack é um projeto do Facebook que tem como objetivo a colaboração e o desenvolvimento econômico e tecnológico do Brasil. A Mastertech é parceira oficial desse projeto na formação de talentos na área de tecnologia através de cursos de programação. Durante o projeto serão oferecidas vagas para um curso intensivo, realizado em finais de semana, e bolsas de estudo para a academia profissional de programação.
+                    </article>
+                </aside>
+
+              </div>
+            </section>
+
+        </main>
+
+{% include "footer.html" %}

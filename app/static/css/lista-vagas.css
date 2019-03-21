@@ -1,0 +1,114 @@
+/* MAIN */
+
+main {
+    background-color: rgba(245, 245, 245, 1);
+    min-height: calc(100% - 106px);
+    padding-top: 0;
+}
+
+/* LISTA CONTEUDO */
+
+.lista-conteudo.container {
+    align-items: flex-start;
+    justify-content: left;
+    padding: 16px 0;
+}
+
+/* PAINEL USUARIO */
+
+.painel-usuario {
+    background-color: white;
+    width: 200px;
+}
+
+.painel-usuario .foto-container {
+    display: flex;
+    height: 90px;
+    justify-content: center;
+}
+
+.painel-usuario .foto-container .cover {
+    background-image: linear-gradient(to right, rgba(230,60,112,0.3), rgba(103,85,130, 0.3), rgba(99,177,200, 0.3));
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    z-index: 0;;
+}
+
+.painel-usuario .foto-container img {
+    border: 2px solid white;
+    margin-top: 16px;
+    border-radius: 50%; 
+    max-height: 66px;
+    max-width: 66px;
+    z-index: 1;
+}
+
+.painel-usuario .nome,
+.painel-usuario .cargo {
+    display: block;
+    text-align: center;
+}
+
+.painel-usuario .nome {
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.painel-usuario .cargo {
+    font-size: 10pt;
+}
+
+.painel-usuario .bio {
+    padding: 0 8px 8px 8px;
+    font-size: 10pt;
+}
+
+/* LISTA RESULTADO */
+
+.lista-resultado {
+    background-color: white;
+    margin-left: 16px;
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
+
+.lista-resultado .item {
+    padding: 8px;
+}
+
+/* VAGA */
+
+.item.vaga {
+    margin-bottom: 16px;
+}
+
+.item.vaga .nome {
+    font-size: 16pt;
+}
+
+.item.vaga article,
+.item.vaga span {
+    display: block;
+    font-size: 10pt;
+}
+
+.item.vaga .cidade {
+
+    float: right;
+}
+
+.item.vaga .salario {    
+    font-weight: bold;
+}
+
+.item.vaga .descricao {
+    margin-top: 8px;
+    text-overflow: ellipsis;
+}
+
+.item.vaga .aplicar {
+    margin-top: 8px;
+    color: #E63C70;
+}

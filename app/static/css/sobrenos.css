@@ -1,0 +1,32 @@
+/* MAIN */
+
+main {
+    min-height: calc(100% - 106px);
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SOBRE NÓS */
+
+.main-sobre .sobre {
+    background-color: white;
+    padding: 8px;
+}
+
+.main-sobre .sobre .titulo {
+    display: block;
+    font-size: 16pt;
+    margin-bottom: 16px;
+}
+
+.main-sobre .sobre .descricao {
+    text-align: justify;
+}
+
+.main-sobre .sobre img {
+    height: auto;
+    margin-left: 8px;
+    width: 400px;
+}
